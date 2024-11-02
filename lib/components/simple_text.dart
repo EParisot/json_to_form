@@ -66,9 +66,7 @@ class _SimpleText extends State<SimpleText> {
         children: <Widget>[
           label,
           new TextFormField(
-            style: TextStyle(
-                backgroundColor: widget.backgroundColor,
-                color: widget.foregroundColor),
+            style: TextStyle(color: widget.foregroundColor),
             controller: null,
             initialValue: item['value'] ?? null,
             decoration: item['decoration'] ??
