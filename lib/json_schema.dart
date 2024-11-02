@@ -5,19 +5,20 @@ import 'package:flutter/material.dart';
 import 'components/index.dart';
 
 class JsonSchema extends StatefulWidget {
-  const JsonSchema({
-    this.form,
-    required this.onChanged,
-    this.padding,
-    this.formMap,
-    this.autovalidateMode,
-    this.errorMessages = const {},
-    this.validations = const {},
-    this.decorations = const {},
-    this.keyboardTypes = const {},
-    this.buttonSave,
-    this.actionSave,
-  });
+  const JsonSchema(
+      {this.form,
+      required this.onChanged,
+      this.padding,
+      this.formMap,
+      this.autovalidateMode,
+      this.errorMessages = const {},
+      this.validations = const {},
+      this.decorations = const {},
+      this.keyboardTypes = const {},
+      this.buttonSave,
+      this.actionSave,
+      this.foregroundColor,
+      this.backgroundColor});
 
   final Map errorMessages;
   final Map validations;
@@ -30,6 +31,8 @@ class JsonSchema extends StatefulWidget {
   final Function? actionSave;
   final ValueChanged<dynamic> onChanged;
   final AutovalidateMode? autovalidateMode;
+  final Color foregroundColor;
+  final Color backgroundColor;
 
   @override
   _CoreFormState createState() =>
