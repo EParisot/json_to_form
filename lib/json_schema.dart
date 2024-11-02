@@ -80,7 +80,6 @@ class _CoreFormState extends State<JsonSchema> {
           keyboardTypes: widget.keyboardTypes,
           cursorColor: widget.cursorColor,
           foregroundColor: widget.foregroundColor,
-          backgroundColor: widget.backgroundColor,
         ));
       }
 

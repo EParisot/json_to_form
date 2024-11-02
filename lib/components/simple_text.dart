@@ -12,7 +12,6 @@ class SimpleText extends StatefulWidget {
     this.validations = const {},
     this.decorations = const {},
     this.keyboardTypes = const {},
-    this.backgroundColor = Colors.white,
     this.foregroundColor = Colors.black,
     this.cursorColor = Colors.white,
   }) : super(key: key);
@@ -23,7 +22,6 @@ class SimpleText extends StatefulWidget {
   final Map validations;
   final Map decorations;
   final Map keyboardTypes;
-  final Color backgroundColor;
   final Color foregroundColor;
   final Color cursorColor;
 
