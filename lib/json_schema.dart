@@ -17,8 +17,8 @@ class JsonSchema extends StatefulWidget {
       this.keyboardTypes = const {},
       this.buttonSave,
       this.actionSave,
-      this.foregroundColor,
-      this.backgroundColor});
+      this.foregroundColor = Colors.black,
+      this.backgroundColor = Colors.white});
 
   final Map errorMessages;
   final Map validations;

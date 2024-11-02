@@ -61,7 +61,7 @@ class _SimpleSelect extends State<SimpleSelect> {
           new DropdownButton<String>(
             hint: new Text("Select a user"),
             value: item['value'],
-            style: const TextStyle(color: widget.foregroundColor),
+            style: TextStyle(color: widget.foregroundColor),
             dropdownColor: widget.backgroundColor,
             onChanged: (String? newValue) {
               setState(() {
