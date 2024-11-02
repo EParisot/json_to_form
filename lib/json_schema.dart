@@ -117,6 +117,8 @@ class _CoreFormState extends State<JsonSchema> {
           item: item,
           onChange: onChange,
           position: count,
+          foregroundColor: widget.foregroundColor,
+          backgroundColor: widget.backgroundColor,
           decorations: widget.decorations,
           errorMessages: widget.errorMessages,
           validations: widget.validations,
