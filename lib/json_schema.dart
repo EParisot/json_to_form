@@ -17,8 +17,8 @@ class JsonSchema extends StatefulWidget {
       this.keyboardTypes = const {},
       this.buttonSave,
       this.actionSave,
-      this.foregroundColor = Colors.black,
-      this.backgroundColor = Colors.white});
+      this.selectForegroundColor = Colors.black,
+      this.selectBackgroundColor = Colors.white});
 
   final Map errorMessages;
   final Map validations;
@@ -31,8 +31,8 @@ class JsonSchema extends StatefulWidget {
   final Function? actionSave;
   final ValueChanged<dynamic> onChanged;
   final AutovalidateMode? autovalidateMode;
-  final Color foregroundColor;
-  final Color backgroundColor;
+  final Color selectForegroundColor;
+  final Color selectBackgroundColor;
 
   @override
   _CoreFormState createState() =>
@@ -120,8 +120,8 @@ class _CoreFormState extends State<JsonSchema> {
           item: item,
           onChange: onChange,
           position: count,
-          foregroundColor: widget.foregroundColor,
-          backgroundColor: widget.backgroundColor,
+          selectForegroundColor: widget.selectForegroundColor,
+          selectBackgroundColor: widget.selectBackgroundColor,
           decorations: widget.decorations,
           errorMessages: widget.errorMessages,
           validations: widget.validations,
