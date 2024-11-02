@@ -51,6 +51,10 @@ class _SimpleSwitch extends State<SimpleSwitch> {
       child: new Row(children: <Widget>[
         new Expanded(child: new Text(item['label'])),
         new Switch(
+          activeColor: Theme.of(context).colorScheme.secondary,
+          activeTrackColor: Theme.of(context).colorScheme.onPrimary,
+          inactiveThumbColor: Theme.of(context).colorScheme.onPrimary,
+          inactiveTrackColor: Theme.of(context).colorScheme.onPrimary,
           value: item['value'] ?? false,
           onChanged: (bool value) {
             this.setState(() {
