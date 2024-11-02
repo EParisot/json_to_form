@@ -18,8 +18,7 @@ class JsonSchema extends StatefulWidget {
       this.buttonSave,
       this.actionSave,
       this.foregroundColor = Colors.black,
-      this.backgroundColor = Colors.white,
-      this.cursorColor = Colors.white});
+      this.backgroundColor = Colors.white});
 
   final Map errorMessages;
   final Map validations;
@@ -34,7 +33,6 @@ class JsonSchema extends StatefulWidget {
   final AutovalidateMode? autovalidateMode;
   final Color foregroundColor;
   final Color backgroundColor;
-  final Color cursorColor;
 
   @override
   _CoreFormState createState() =>
@@ -78,7 +76,6 @@ class _CoreFormState extends State<JsonSchema> {
           errorMessages: widget.errorMessages,
           validations: widget.validations,
           keyboardTypes: widget.keyboardTypes,
-          cursorColor: widget.cursorColor,
           foregroundColor: widget.foregroundColor,
         ));
       }

@@ -13,7 +13,6 @@ class SimpleText extends StatefulWidget {
     this.decorations = const {},
     this.keyboardTypes = const {},
     this.foregroundColor = Colors.black,
-    this.cursorColor = Colors.white,
   }) : super(key: key);
   final dynamic item;
   final Function onChange;
@@ -23,7 +22,6 @@ class SimpleText extends StatefulWidget {
   final Map decorations;
   final Map keyboardTypes;
   final Color foregroundColor;
-  final Color cursorColor;
 
   @override
   _SimpleText createState() => new _SimpleText();
@@ -108,7 +106,6 @@ class _SimpleText extends State<SimpleText> {
               }
               return null;
             },
-            cursorColor: widget.cursorColor,
           ),
         ],
       ),
