@@ -35,7 +35,6 @@ class _SimpleSwitch extends State<SimpleSwitch> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     item = widget.item;
     if (item['value'] == null) {
@@ -45,7 +44,6 @@ class _SimpleSwitch extends State<SimpleSwitch> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return new Container(
       margin: new EdgeInsets.only(top: 5.0),
       child: new Row(children: <Widget>[

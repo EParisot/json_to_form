@@ -37,7 +37,6 @@ class _SimpleText extends State<SimpleText> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     item = widget.item;
   }
