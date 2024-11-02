@@ -12,6 +12,9 @@ class SimpleText extends StatefulWidget {
     this.validations = const {},
     this.decorations = const {},
     this.keyboardTypes = const {},
+    this.backgroundColor = Colors.white,
+    this.foregroundColor = Colors.black,
+    this.cursorColor = Colors.white,
   }) : super(key: key);
   final dynamic item;
   final Function onChange;
@@ -20,6 +23,9 @@ class SimpleText extends StatefulWidget {
   final Map validations;
   final Map decorations;
   final Map keyboardTypes;
+  final Color backgroundColor;
+  final Color foregroundColor;
+  final Color cursorColor;
 
   @override
   _SimpleText createState() => new _SimpleText();
@@ -60,6 +66,9 @@ class _SimpleText extends State<SimpleText> {
         children: <Widget>[
           label,
           new TextFormField(
+            style: TextStyle(
+                backgroundColor: widget.backgroundColor,
+                color: widget.foregroundColor),
             controller: null,
             initialValue: item['value'] ?? null,
             decoration: item['decoration'] ??
@@ -103,6 +112,7 @@ class _SimpleText extends State<SimpleText> {
               }
               return null;
             },
+            cursorColor: widget.cursorColor,
           ),
         ],
       ),

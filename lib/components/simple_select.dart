@@ -12,8 +12,8 @@ class SimpleSelect extends StatefulWidget {
       this.validations = const {},
       this.decorations = const {},
       this.keyboardTypes = const {},
-      this.selectBackgroundColor = Colors.white,
-      this.selectForegroundColor = Colors.black})
+      this.backgroundColor = Colors.white,
+      this.foregroundColor = Colors.black})
       : super(key: key);
   final dynamic item;
   final Function onChange;
@@ -22,8 +22,8 @@ class SimpleSelect extends StatefulWidget {
   final Map validations;
   final Map decorations;
   final Map keyboardTypes;
-  final Color selectBackgroundColor;
-  final Color selectForegroundColor;
+  final Color backgroundColor;
+  final Color foregroundColor;
 
   @override
   _SimpleSelect createState() => new _SimpleSelect();
@@ -61,8 +61,8 @@ class _SimpleSelect extends State<SimpleSelect> {
           new DropdownButton<String>(
             hint: new Text("Select a user"),
             value: item['value'],
-            style: TextStyle(color: widget.selectForegroundColor),
-            dropdownColor: widget.selectBackgroundColor,
+            style: TextStyle(color: widget.foregroundColor),
+            dropdownColor: widget.backgroundColor,
             onChanged: (String? newValue) {
               setState(() {
                 item['value'] = newValue;
